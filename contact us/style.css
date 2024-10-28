@@ -1,0 +1,91 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Outfit';
+  background: cadetblue;
+}
+.contact-container{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+.contact-leftside{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  
+}
+.contact-leftside-title h2{
+  font-weight: 900;
+  color: black;
+  font-size: 60px;
+}
+.container-leftside-title hr{
+  border: none;
+  width: 120px;
+  height: 6px;
+  background-color: darkslategray;
+  border-radius: 11px;
+  margin-bottom: 20px;
+}
+.contact-ipt{
+  font-weight: 700;
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 30px;
+  font-weight: 500px;
+  color: black;
+  border-radius: 55px;
+}
+#icon{
+  height: 20px;
+  width: 20px;
+}
+#btn{
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 17px;
+  gap: 12px;
+  border: none;
+  height: 5px;
+  color: black;
+  font-weight: 900;
+  background-color: cornsilk;
+  border-radius: 50px;
+  background: linear-gradient(270deg, aquamarine, darksalmon );
+  cursor:pointer;
+}
+#side_img{
+  height: 420px;
+  width: 420px;
+}
+.container-leftside textarea{
+  height: 150px;
+  padding: 50px 50px;
+  border radius: 50px;
+  
+  
+}
+.contact-ipt:focus {
+  border: 4px solid black;
+}
+
+@media (max-width:900px){
+  .contact-ipts{
+    width:85vw;
+  }
+  .contact-rightside{
+    display:none;
+  }
+}
+
